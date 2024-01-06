@@ -6,7 +6,7 @@ This is Made by: OM UGALE.
 --> AllPattern.java contains the star and number pattern codes.
 --> AllFunction.java contaim=n the function codes.
 
-Each codes in file as titled by which output is given by code, so read the title properly and see the code.
+Note:- Each codes in file as titled by which output is given by code, so read the title properly and see the code.
 
 Thank You.
 -----------*---------------*---------------*------------
