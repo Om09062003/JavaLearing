@@ -200,7 +200,7 @@ public class AllPattern{
         } */
         
     //Diamond Pattern
-        System.out.print("Enter The Number Of Rows: ");
+        /* System.out.print("Enter The Number Of Rows: ");
         int n = sc.nextInt();
         for(int i=1; i<=n; i++){
             for(int space=1; space<=n-i; space++){
@@ -226,7 +226,7 @@ public class AllPattern{
                 System.out.print("*");
             }
             System.out.println();
-        }
+        } */
 
     }
 }
