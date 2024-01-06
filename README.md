@@ -4,7 +4,6 @@ This is Made by: OM UGALE.
 
 --> AllLearing.java contains all the java codes. 
 --> AllPattern.java contains the star and number pattern codes.
---> AllFunction.java contains the code which as the function concepts.
 
 Each codes in file as titled by which output is given by code, so read the title properly and see the code.
 
