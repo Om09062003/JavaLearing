@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class TPC {
+public class AllLearning {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in); 
 
