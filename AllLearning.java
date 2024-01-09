@@ -250,6 +250,14 @@ public class AllLearning {
             i++;
         }while(i<=10); */
 
+    //Infinite loop
+        /* System.out.print("Enter The Number: ");
+        double n=sc.nextInt();
+        do{
+            System.out.println(n);
+            n++;
+        }while(true); */
+
     //Enter 1 take Input Marks Give Grades Or Enter 0 To Stop
         /* int input;
         do{

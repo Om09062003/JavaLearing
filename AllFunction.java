@@ -3,18 +3,28 @@ import java.util.Scanner;
 public class AllFunction {
 
 //Main
-    //public static void main(String[] args){
+    public static void main(String[] args){
         /* myMethod("Ramesh");
         myMethod("Nisha");
         myNumber();
         System.out.println(sum(10 )); */
         //doMultiple();
-        /* System.out.print("Enter The Number: ");
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        myFactorial(n); */
+         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter The Number: ");
+        int n = sc.nextInt(); 
+        //int m = sc.nextInt();
+        //int r = sc.nextInt();
+        //myFactorial(n); 
+        //myNumber(n);
+        //myTable(n);
+        //myPrime(n);
+        //myAverage();
+        //myOdd(n);
+        //myGreat(n, m);
+        //circumferenceOfCircle(r);
+        //myAge(n);
 
-    //} 
+    } 
 
 //Print Name Greeting
     /* public static void myMethod(String Name) {
@@ -79,6 +89,95 @@ public class AllFunction {
             System.out.println("Factorial: "+Factorial);
         }
     } */
+//Number Is Even Or Odd
+    /* public static void myNumber(int n){
+        if(n%2==0){
+            System.out.println(n+" is Even Number.");
+        }else{
+            System.out.println(n+" In Odd Number.");
+        }
+    } */
+
+//Print Table Of N
+    /* public static void myTable(int n){
+        for(int i=1; i<=10; i++){
+            System.out.println(n+ " * "+i+ " = "+(n*i));
+        }
+    } */
+
+//Prime Number
+    /* public static void myPrime(int n){
+        boolean isPrime = true;
+        for(int i=2; i<=n/2 ;i++){
+            if(n%i == 0){
+                isPrime = false;
+                break;
+            }
+        }
+        if(isPrime){
+            if(n==1){
+                System.out.println("1 Is Neither Prime Not Composite");
+            }else{
+                System.out.println("This Is Prime Number");
+            }
+        }else{
+            System.out.println("This Is Not Prime Number");
+        }
+    } */
+
+//Find Average
+    /* public static void myAverage(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter The subject Number: ");
+        float n = sc.nextInt();
+        float sum = 0;
+        for(int i=1; i<=n; i++){
+            System.out.print("Enter The Number: ");
+            float num = sc.nextInt();
+            sum = sum + num;
+        }
+        float avg = sum/n;
+        System.out.println(sum);
+        System.out.println(avg);
+    } */
+
+//Sum Of Odd Number Form 1 to n
+    /* public static void myOdd(int n){
+        int sum=0;
+        for(int i=1; i<=n; i++){
+            if(i%2!=0){
+                sum+=i;
+            }
+        }
+        System.out.println(sum);
+    } */
+
+//Greatest Number 
+    /* public static int myGreat(int n, int m){
+        if(n>m){
+            System.out.println(n+" is greater than "+m);
+        }else{
+            System.out.println(m+" is grester than "+n);
+        }
+        return 0;
+    } */
+//Circumference of Circle
+    /* public static void circumferenceOfCircle(int r){
+        final double Pi = 3.14;
+        double Circumference = 2*Pi*r;
+        System.out.println(Circumference);
+    } */
+
+//eligible for vote or not
+    /* public static  void myAge(int n) {
+        if(n>18){
+            System.out.println("Eligibale for vote.");
+        }else{
+            System.out.println("Not eligible for vote.");
+        }
+    } */
+
+
 }
 
 
