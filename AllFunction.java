@@ -9,7 +9,7 @@ public class AllFunction {
         myNumber();
         System.out.println(sum(10 )); */
         //doMultiple();
-         Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter The Number: ");
         int n = sc.nextInt(); 
         //int m = sc.nextInt();
@@ -20,7 +20,7 @@ public class AllFunction {
         //myPrime(n);
         //myAverage();
         //myOdd(n);
-        //myGreat(n, m);
+        //System.out.println(myGreat(n, m));
         //circumferenceOfCircle(r);
         //myAge(n);
 
@@ -62,6 +62,16 @@ public class AllFunction {
             return 0;
         } 
     } */
+
+    // Example Intersection arrays
+        /* Integer[] array1 = {1, 2, 3, 4, 5};
+        Integer[] array2 = {3, 4, 5, 6, 7};
+        ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(array1));
+        ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(array2));
+        list1.retainAll(list2);
+        Integer[] resultArray = new Integer[list1.size()];
+        resultArray = list1.toArray(resultArray);
+        System.out.println(Arrays.toString(resultArray)); */
 
 //Print name
     /* public static void main(String[] args){
@@ -153,14 +163,14 @@ public class AllFunction {
     } */
 
 //Greatest Number 
-    /* public static int myGreat(int n, int m){
+     /* public static int myGreat(int n, int m){
         if(n>m){
-            System.out.println(n+" is greater than "+m);
+            return n;
         }else{
-            System.out.println(m+" is grester than "+n);
+            return m;
         }
-        return 0;
-    } */
+    }*/
+
 //Circumference of Circle
     /* public static void circumferenceOfCircle(int r){
         final double Pi = 3.14;

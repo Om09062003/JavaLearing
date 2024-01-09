@@ -242,6 +242,28 @@ public class AllLearning {
             i++;
         } */
 
+    //Possitive, Negative, Zero
+        /* int positive = 0, negative = 0, zero = 0;
+        System.out.print("Enter 1 to continue: ");
+        int input = sc.nextInt();
+        while(input==1){
+            System.out.print("Enter The Number: ");
+            int n = sc.nextInt();
+            if(n>0){
+                positive++;
+            }else if(n<0){
+                negative++;
+            }else{
+                zero++;
+            }
+
+            System.out.print("Enter 1 to continue or 0 to exit: ");
+            input =  sc.nextInt();
+        }
+        System.out.println("Positive: "+positive);
+        System.out.println("Negative: "+negative);
+        System.out.println("Zero: "+zero) */
+
     //DO WHILE loop
     //Print The Number From 0 To 10
         /* int i=0;
@@ -276,51 +298,20 @@ public class AllLearning {
             input = sc.nextInt();
         }while(input==1); */
 
-
-    //FUNCTIONS
-    //Main
-        /* public static void main(String[] args){
-            myMethod("Ramesh");
-            myMethod("Nisha");
-            myNumber();
-            System.out.println(sum(10 ));
-
+    //Other
+    //Power x^n
+        /* System.out.print("Enter The 1st Number: ");
+        int x = sc.nextInt();
+        System.out.print("Enter The 2nd Number: ");
+        int n = sc.nextInt(); */
+        //1st method
+        /* int result = 1;
+        for(int i=1; i<=n; i++){
+            result = result*x;
         }
-    //Print Name Greeting
-        public static void myMethod(String Name) {
-            System.out.println("Good Morning "+ Name);       
-        }
-    //Add 2 Numbers
-        public static void myNumber(){
-            Scanner sc = new Scanner(System.in);
-            System.out.print("Enter the first number: ");
-            int a = sc.nextInt();
-            System.out.print("Enter the second number: ");
-            int b = sc.nextInt();
-            int sum = a+b;
-            System.out.println("Sum: "+ sum);
-        }
-    //Add First 1 0 Numbers
-        public static int sum(int k){
-            if(k>0){
-                return k+sum(k-1);
-            }else{
-                return 0;
-            } 
-        } */
-    
-
-        
-        
-    // Example Intersection arrays
-        /* Integer[] array1 = {1, 2, 3, 4, 5};
-        Integer[] array2 = {3, 4, 5, 6, 7};
-        ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(array1));
-        ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(array2));
-        list1.retainAll(list2);
-        Integer[] resultArray = new Integer[list1.size()];
-        resultArray = list1.toArray(resultArray);
-        System.out.println(Arrays.toString(resultArray)); */
-         
+        System.out.println(result); */
+        //2nd method
+        /* double Ans = Math.pow(x, n);
+        System.out.println(Ans); */
     }
 }  
