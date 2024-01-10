@@ -82,6 +82,67 @@ public class AllLearning {
         }else{
             System.out.println(n+"Not");
         }  */
+    
+    //Incaome Tax
+        /* System.out.print("Enter The Income: ");
+        int income = sc.nextInt();
+        int tax=0;
+        if(income<500000){
+            tax=0;
+        }else if(income<=500000 && income<1000000){
+            tax= (int) (income*0.2);
+        }else{
+            tax= (int) (income*0.3);
+        }
+        System.out.println("Your Tax is: "+tax); */
+
+    //Find number Positive or negative
+        /* System.out.print("Enter The Number: ");
+        int n = sc.nextInt();
+        if(n>=0){
+            System.out.println(n+" Number is Positive");
+        }else{
+            System.out.println("Negative");
+        } */
+
+    //Have fever or Not
+        /* double temp=103.5;
+        if(temp>100){
+            System.out.println("You have a fever");
+        }else{
+            System.out.println("You dont have a fever");
+        } */
+
+    //leap year
+    //1stMethod
+        /* System.out.print("Enter The Year: ");
+        int year = sc.nextInt();
+        if(year%4==0){
+            if(year%100==0){
+                if(year%400==0){
+                    System.out.println("It is a Leap Year");
+                }else{
+                    
+                    System.out.println("Not a Leap Year");
+                }
+            }else{
+                System.out.println("Is a Leap Year");
+            }
+        }else{
+            System.out.println("Not a Leap Year");
+        } */
+    //2nd Method
+        /* System.out.print("Enter The Year: ");
+        int year = sc.nextInt();
+        boolean x = (year%4)==0;
+        boolean y = (year%100)!=0;
+        boolean z = ((year%100==0) && (year%400==0));
+        if(x && (y||z)){
+            System.out.println("It Is Leap Year.");
+        }else{
+            System.out.println("It Is Not A Leap Year.");
+        } */
+    
 
     //SWITCH Case
         /* System.out.print("Enter The Number 1 or 2 or 3: ");
@@ -313,5 +374,24 @@ public class AllLearning {
         //2nd method
         /* double Ans = Math.pow(x, n);
         System.out.println(Ans); */
+
+    //ternary operator
+    //Even or odd
+        /* System.out.print("Enter The Number: ");
+        int n = sc.nextInt();
+        String Type = ((n%2)==0)?"even":"odd";
+        System.out.println(Type); */
+
+    //Fail or pass
+        /* System.out.print("Enter The Numenr: ");
+        int mark=sc.nextInt();
+        String result = (mark>=33)?"Pass":"Fail";
+        System.out.println(result); */
+
+    //Greater or not
+        /* int a = 23, b=10;
+        boolean x = (a<b) ? true : false;
+        int y = (a>b)?a:b;
+        System.out.println(x+ " " +y); */
     }
 }  
