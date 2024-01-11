@@ -9,12 +9,13 @@ public class AllFunction {
         myNumber();
         System.out.println(sum(10 )); */
         //doMultiple();
-        Scanner sc = new Scanner(System.in);
+        /* Scanner sc = new Scanner(System.in);
         System.out.print("Enter The Number: ");
-        int n = sc.nextInt(); 
+        int n = sc.nextInt();  */
         //int m = sc.nextInt();
         //int r = sc.nextInt();
         //myFactorial(n); 
+        //System.out.println(binoCoeff(5, 2)); 
         //myNumber(n);
         //myTable(n);
         //myPrime(n);
@@ -87,18 +88,28 @@ public class AllFunction {
     } */
 
 //Factorial
-    /* public static void myFactorial(int n){
+    /* public static int myFactorial(int n){
         int Factorial = 1;
         if(n<0){
             System.out.println("Invalid");
-            return;
         }else{
             for(int i=n; i>=1; i--){
                 Factorial = Factorial * i;
             }
             System.out.println("Factorial: "+Factorial);
         }
-    } */
+        return Factorial;
+    } */ 
+
+//Binomial Coefficient
+    /* public static int binoCoeff(int n, int r){
+        int n_fact = myFactorial(n);
+        int r_fact = myFactorial(r);
+        int nr_fact = myFactorial(n-r);
+        int binoCoeff = n_fact/(r_fact*nr_fact);
+        return binoCoeff;
+    } */    
+
 //Number Is Even Or Odd
     /* public static void myNumber(int n){
         if(n%2==0){

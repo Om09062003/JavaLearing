@@ -20,6 +20,18 @@ public class AllPattern{
             System.out.println();
         } */
 
+    //Char pattern
+        /* System.out.print("Enter The Number Of Rows: ");
+        int n =sc.nextInt();
+        char ch = 'A';
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=i; j++){
+                System.out.print(ch);
+                //ch++; 
+            }
+            System.out.println();
+        } */
+
     //Hollow Rectangle
         /* System.out.print("Enter The Number of Rows: ");
         int n = sc.nextInt();

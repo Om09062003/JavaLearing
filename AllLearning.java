@@ -9,6 +9,12 @@ public class AllLearning {
     //Java Starting
         /* System.out.println("Hello World"); */
 
+    //char number
+        /* char a ='a';
+        char b ='b';
+        System.out.println((int)(b));
+        System.out.println((int)(a)); */
+
     //Add Two Numbers
         /* int a = 20;
         int b = 30; 
@@ -114,7 +120,7 @@ public class AllLearning {
         } */
 
     //leap year
-    //1stMethod
+    //1stMethod 
         /* System.out.print("Enter The Year: ");
         int year = sc.nextInt();
         if(year%4==0){
@@ -131,6 +137,7 @@ public class AllLearning {
         }else{
             System.out.println("Not a Leap Year");
         } */
+        
     //2nd Method
         /* System.out.print("Enter The Year: ");
         int year = sc.nextInt();
@@ -319,11 +326,20 @@ public class AllLearning {
             }
 
             System.out.print("Enter 1 to continue or 0 to exit: ");
-            input =  sc.nextInt();
+            input =  sc.nextInt(); 
         }
         System.out.println("Positive: "+positive);
         System.out.println("Negative: "+negative);
         System.out.println("Zero: "+zero) */
+
+    //Reverse of Number
+        /* System.out.print("Enter The Number: ");
+        int n = sc.nextInt();
+        while(n>0){
+            int lastdigit = n%10;
+            System.out.print(lastdigit);
+            n=n/10;
+        } */
 
     //DO WHILE loop
     //Print The Number From 0 To 10
@@ -393,5 +409,21 @@ public class AllLearning {
         boolean x = (a<b) ? true : false;
         int y = (a>b)?a:b;
         System.out.println(x+ " " +y); */
+
+    //Bill
+        /* System.out.println("Enter The cost of pencile, pen, eraser: ");
+        float pencile = sc.nextInt();
+        float pen = sc.nextInt();
+        float eraser = sc.nextInt();
+
+        float totalCost = pencile+pen+eraser;
+        System.out.println("Pencile = "+pencile);
+        System.out.println("Pen = "+pen);
+        System.out.println("Eraser = "+eraser);
+        float newTotal = totalCost+(0.18f*totalCost);
+        System.out.println("Total = "+totalCost);
+        System.out.println("Bill with 18% = "+newTotal); */
+
+
     }
 }  
