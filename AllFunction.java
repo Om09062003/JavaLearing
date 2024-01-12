@@ -9,21 +9,29 @@ public class AllFunction {
         myNumber();
         System.out.println(sum(10 )); */
         //doMultiple();
-        /* Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter The Number: ");
-        int n = sc.nextInt();  */
-        //int m = sc.nextInt();
-        //int r = sc.nextInt();
+        /*int n = sc.nextInt();  
+        int m = sc.nextInt();
+        int r = sc.nextInt(); */
+        /* int decNum = sc.nextInt();
+        decToBin(decNum); */
+        /* int binNum = sc.nextInt();
+        binToDec(binNum); */
         //myFactorial(n); 
         //System.out.println(binoCoeff(5, 2)); 
         //myNumber(n);
         //myTable(n);
         //myPrime(n);
+        //System.out.println(isPrime(5));
+        //primesInRang(10);
         //myAverage();
         //myOdd(n);
         //System.out.println(myGreat(n, m));
         //circumferenceOfCircle(r);
         //myAge(n);
+        /* System.out.println(sum(4,5,6));
+        System.out.println(sum(2.4f, 4.1f)); */
 
     } 
 
@@ -98,7 +106,7 @@ public class AllFunction {
             }
             System.out.println("Factorial: "+Factorial);
         }
-        return Factorial;
+        return Factorial;binoCoeff(5, 2);
     } */ 
 
 //Binomial Coefficient
@@ -126,7 +134,7 @@ public class AllFunction {
         }
     } */
 
-//Prime Number
+//check Prime Number
     /* public static void myPrime(int n){
         boolean isPrime = true;
         for(int i=2; i<=n/2 ;i++){
@@ -145,6 +153,27 @@ public class AllFunction {
             System.out.println("This Is Not Prime Number");
         }
     } */
+
+//print prime number
+    /* public static boolean isPrime(int n){
+        if(n==2){
+            return true;
+        }
+        for(int i=2; i<=Math.sqrt(n); i++){
+            if(n%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void primesInRang(int n){
+        for(int i=2; i<=n; i++){
+            if(isPrime(i)){
+                System.out.print(i+" ");
+            }
+        }
+        System.out.println();
+    }  */
 
 //Find Average
     /* public static void myAverage(){
@@ -198,6 +227,44 @@ public class AllFunction {
         }
     } */
 
+//Function OverLoading
+    /* public static int sum(int n, int m){
+        return n+m;
+    }
+
+    public static int sum(int n, int m, int r){
+        return n+m+r;
+    }
+    public static float sum(float n, float m){
+        return n+m;
+    } */
+
+//binary to decimal
+    /* public static void binToDec(int binNum){
+        int pow = 0;
+        int decNum = 0;
+
+        while(binNum > 0){
+            int lastDight = binNum%10;
+            decNum = decNum+(lastDight*(int)Math.pow(2,pow));
+            pow++;
+            binNum = binNum/10;
+        }
+        System.out.println("Decimal Number Is: "+decNum);
+    } */
+
+//decimal to binary
+    /* public static void decToBin(int decNum){
+        int pow = 0;
+        int binNum = 0;
+        while(decNum>0){
+            int rem = decNum%2;
+            binNum = binNum+(rem*(int)Math.pow(10, pow));
+            pow++;
+            decNum = decNum/2;
+        }
+        System.out.println("Binary no is: "+binNum);
+    } */
 
 }
 
