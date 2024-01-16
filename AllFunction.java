@@ -9,8 +9,8 @@ public class AllFunction {
         myNumber();
         System.out.println(sum(10 )); */
         //doMultiple();
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter The Number: ");
+        //Scanner sc = new Scanner(System.in);
+        //System.out.print("Enter The Number: ");
         /*int n = sc.nextInt();  
         int m = sc.nextInt();
         int r = sc.nextInt(); */
@@ -32,6 +32,17 @@ public class AllFunction {
         //myAge(n);
         /* System.out.println(sum(4,5,6));
         System.out.println(sum(2.4f, 4.1f)); */
+
+        /* System.out.print("Enter The Interger");
+        int n =sc.nextInt();
+        if(isEven(n)){
+            System.out.println("Even");
+        }else{
+            System.out.println("Odd");
+        } */
+
+        //myPalindrom();
+        //myIntSum();
 
     } 
 
@@ -189,7 +200,7 @@ public class AllFunction {
         float avg = sum/n;
         System.out.println(sum);
         System.out.println(avg);
-    } */
+    } */ 
 
 //Sum Of Odd Number Form 1 to n
     /* public static void myOdd(int n){
@@ -266,6 +277,46 @@ public class AllFunction {
         System.out.println("Binary no is: "+binNum);
     } */
 
+//Even Odd
+    /* public static boolean isEven(int n){
+        if(n%2==0){
+            return true;
+        }else{
+            return false;
+        }
+    } */
+
+//Palindrom
+    /* public static void myPalindrom(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter The Number: ");
+        int n =sc.nextInt();
+        int reverse = 0;
+        int m = n;
+        while(m!=0){
+            int rem = m%10;
+            reverse = reverse*10+rem;
+            m=m/10;
+        }
+        if(n==reverse){
+            System.out.println("Pal");;
+        }else{
+            System.out.println("NO");;
+        }
+
+    } */ 
+
+//sum of between int
+    /* public static void myIntSum(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter The number: ");
+        int n = sc.nextInt();
+        int sum=0;
+        while(n>0){
+            int lastDigiti=n%10;
+            sum+=lastDigiti;
+            n=n/10;
+        }
+        System.out.println(sum);
+    } */
 }
-
-
