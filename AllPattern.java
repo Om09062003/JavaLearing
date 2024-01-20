@@ -137,6 +137,23 @@ public class AllPattern{
             System.out.println();
         } */
 
+    //Hollo Rombus
+        /* System.out.print("Enter The Number of Rows: ");
+        int n = sc.nextInt();
+        for(int i=1; i<=n; i++){
+            for(int space = 1; space<=n-i; space++){
+                System.out.print(" ");
+            }
+            for(int j=1; j<=n; j++){
+                if(i==1 || j==1 || i==n || j==n){
+                    System.out.print(" * ");
+                }else{
+                    System.out.print("   ");
+                }
+            }
+            System.out.println();
+        } */
+
     //Number Pyramid
         /* System.out.print("Enter The Number Of Rows: ");
         int n = sc.nextInt();
