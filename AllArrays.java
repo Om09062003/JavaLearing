@@ -57,6 +57,10 @@ public class AllArrays {
     //MAX Subarraay sum
         /* int num[] = {2,4,6,8,10};
         maxSubarray(num); */
+
+    //Prefix Subarray Sum
+        /* int num[] = {1,-2,6,-1,3};
+        prefixSubarraySum(num); */
     } 
 
 //Liner Search
@@ -114,7 +118,7 @@ public class AllArrays {
         }
     } */
 
-//Pasirs In an Array
+//Pairs In an Array
     /* public static void pairArray(int num[]){
         int tp=0;
         for(int i=0; i<num.length; i++){
@@ -170,4 +174,26 @@ public class AllArrays {
         System.out.println("Max Sum Is: "+maxSum);
         System.out.println("Total Subarray: "+ts);
     } */ 
+
+//Prefix Subarray Sum
+    /* public static void prefixSubarraySum(int num[]){
+        int sum=0;
+        int maxSum = Integer.MIN_VALUE;
+        int prefix[] = new int[num.length];
+        prefix[0]=num[0];
+        for(int i=1; i<prefix.length; i++){
+            prefix[i]=prefix[i-1]+num[i];
+        }
+        for(int i=0; i<num.length; i++){
+            for(int j=i; j<num.length;j++){
+
+                sum= i==0?prefix[j] : prefix[j]-prefix[i-1];
+                if(maxSum<sum){
+                    maxSum = sum;
+                }
+            }
+        }
+        System.out.println("Max Sum Is: "+maxSum);
+    } */
 }
+  
