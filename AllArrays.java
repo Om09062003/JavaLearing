@@ -69,6 +69,14 @@ public class AllArrays {
     //Trapping Rainwater
         /* int height[] = {4,2,0,6,3,2,5};
         System.out.println(trappedRainwater(height)); */
+
+    //Buy And Sell Stock
+        /* int price[] = {7,1,5,3,6,4};
+        System.out.println(buySellStock(price)); */
+    
+    //Twice value
+        /* int num[] = {1,2,3,1};
+        System.out.println(twiceValue(num)); */
     } 
 
 //Liner Search
@@ -239,6 +247,33 @@ public class AllArrays {
             trapped_water += waterlevel - height[i];
         }
         return trapped_water;
+    } */
+
+//Buy and Sell Stock
+    /* public static int buySellStock(int price[]){
+        int buyPrice = Integer.MAX_VALUE;
+        int maxProfit = 0;
+        for(int i=0; i<price.length; i++){
+            if(buyPrice<price[i]){
+                int profit = price[i] - buyPrice;
+                maxProfit = Math.max(maxProfit, profit);
+            }else{
+                buyPrice = price[i];
+            }
+        }
+        return maxProfit;
+    } */
+
+//Twice value
+    /* public static boolean twiceValue(int num[]){
+        for(int i=0; i<num.length; i++){
+            for(int j=i+1; j<num.length; j++){
+                if(num[i] == num[j]){
+                    return true;
+                }
+            }
+        }
+        return false;
     } */
 }
   
