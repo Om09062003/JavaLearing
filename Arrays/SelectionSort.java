@@ -1,16 +1,17 @@
 package Arrays;
 
-public class BubbleSort {
-
-    public static void bubbleSort(int num[]){
+public class SelectionSort {
+    public static void selectionSort(int num[]){
         for(int i=0; i<num.length-1; i++){
-            for(int j=0; j<num.length-1-i; j++){
-                if(num[j]>num[j+1]){
-                    int temp=num[j];
-                    num[j]=num[j+1];
-                    num[j+1]=temp;
+            int minPos = i;
+            for(int j=i+1; j<num.length; j++){
+                if(num[minPos] > num[j]){
+                    minPos = j;
                 }
             }
+            int temp = num[minPos];
+            num[minPos] = num[i];
+            num[i] = temp;
         }
     }
 
@@ -19,9 +20,10 @@ public class BubbleSort {
             System.out.print(num[i]+" ");
         }
     }
+
     public static void main(String[] args){
         int num[] = {5, 4, 1, 3, 2};
-        bubbleSort(num);
+        selectionSort(num);
         printArr(num);
     }
 }
