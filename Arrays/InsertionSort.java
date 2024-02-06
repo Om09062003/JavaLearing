@@ -5,7 +5,7 @@ public class InsertionSort {
         for(int i=0; i<num.length; i++){
             int curr = num[i];
             int prev = i-1;
-            while(prev >=0 && num[prev]>curr){
+            while(prev >=0 && num[prev]<curr){
                 num[prev+1] = num[prev];
                 prev--;
             }
@@ -21,7 +21,6 @@ public class InsertionSort {
 
     public static void main(String[] args){
         int num[] = {5, 4, 1, 3, 2};
-        System.out.println(num[2-1]);
         insertionSort(num);
         printArr(num);
     }
