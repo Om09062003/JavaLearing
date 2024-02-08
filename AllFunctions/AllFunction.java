@@ -9,7 +9,7 @@ public class AllFunction {
         myNumber();
         System.out.println(sum(10 )); */
         //doMultiple();
-        //Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         //System.out.print("Enter The Number: ");
         /*int n = sc.nextInt();  
         int m = sc.nextInt();
