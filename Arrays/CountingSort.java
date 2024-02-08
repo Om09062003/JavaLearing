@@ -1,7 +1,7 @@
 package Arrays;
 
 public class CountingSort {
-    public static void countingSort(int num[]){
+    public static int countingSort(int num[]){
         int largest = Integer.MIN_VALUE;
         //find range
         for(int i=0; i<num.length; i++){
@@ -14,26 +14,28 @@ public class CountingSort {
             count[num[i]]++;
         }
 
+        return count[1];
+
         //sort
-        int j=0;
+        /* int j=0;
         for(int i=0; i<count.length; i++){
             while(count[i] > 0){
                 num[j]=i;
                 j++;
                 count[i]--;
             }
-        }
+        } */
     }
 
-    public static void printArr(int num[]){
+    /* public static void printArr(int num[]){
         for(int i=0; i<num.length; i++){
             System.out.print(num[i]+" ");
         }
-    }
+    } */
 
     public static void main(String[] args){
         int num[] = {1,4,1,3,2,4,3,7};
-        countingSort(num);
-        printArr(num);
+        System.out.println(countingSort(num));
+        //printArr(num);
     }
 }
