@@ -145,7 +145,7 @@ public class AllFunction {
         }
     } */
 
-//check Prime Number
+ //check Prime Number
     /* public static void myPrime(int n){
         boolean isPrime = true;
         for(int i=2; i<=n/2 ;i++){
